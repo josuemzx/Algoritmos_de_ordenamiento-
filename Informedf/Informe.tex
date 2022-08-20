@@ -153,17 +153,62 @@ La ordenación por selección toma dos arreglos adicionales.
 		
 		Solución \\
 		.................
-
-        \item Algoritmo Merge Sort
+\item Algoritmo Heapsort
 		
 		Solución \\
 		.................
+
+        \item \textbf{ALGORITMO MERGE SORT}
+        
+		 El algoritmo de ordenamiento por mezcla (merge sort) es un algoritmo de ordenamiento externo estable basado en la técnica divide y vencerás.
+		 
+        La idea de los algoritmos de ordenación por mezcla es dividir la matriz por la mitad una y otra vez hasta que cada pieza tenga solo un elemento de longitud. Luego esos elementos se vuelven a juntar (mezclados) en orden de clasificación.
+        
+        Conceptualmente, el ordenamiento por mezcla funciona de la siguiente manera: 
+        \begin{itemize}
+            \item Si la longitud de la lista es 0 o 1, entonces ya está ordenada.
+        \end{itemize}
+    
+        En otro caso: 
+        \begin{itemize}
+            \item Dividir la lista desordenada en dos sublistas de aproximadamente la mitad del tamaño. 
+            \item Ordenar cada sublista recursivamente aplicando el ordenamiento por mezcla. 
+            \item Mezclar las dos sublistas en una sola lista ordenada.
+        \end{itemize}
+
+        El ordenamiento por mezcla incorpora dos ideas principales para mejorar su tiempo de ejecución:
+        \begin{enumerate}
+            \item Una lista pequeña necesitará menos pasos para ordenarse que una lista grande.
+        \end{enumerate}
+        \begin{enumerate}
+            \item Se necesitan menos pasos para construir una lista ordenada a partir de dos listas también ordenadas, que a partir de dos listas desordenadas.
+        \end{enumerate}
+    
+        
+    \includegraphics[width=\textwidth]{img/merge-sort}
+        
+        En todos los casos (el peor, el promedio y el mejor), el algoritmo Merge Sort siempre divide la matriz hasta que todas las submatrices contienen un solo elemento y tarda un tiempo lineal en fusionar esas submatrices. El proceso de división tiene una complejidad de tiempo $\Theta (logN)$ y el proceso de fusión tiene una complejidad de tiempo $\Theta (N)$. Por lo tanto, en todos los casos, la complejidad temporal del algoritmo Merge Sort es $\Theta(NlogN)$.
+
+        Este tipo de ordenamiento es útil cuando se tiene una estructura ordenada y los nuevos datos a añadir se almacenan en una estructura temporal para después agregarlos a la estructura original de manera que vuelva a quedar ordenada
+        
+Merge sort es un ordenamiento estable, paraleliza mejor, y es más eficiente manejando medios secuenciales de acceso lento. Merge sort es a menudo la mejor opción para ordenar una lista enlazada: en esta situación es relativamente fácil implementar merge sort de manera que sólo requiera $\Theta (1)$ espacio extra, y el mal rendimiento de las listas enlazadas ante el acceso aleatorio hace que otros algoritmos (como quicksort) den un bajo rendimiento, y para otros (como heapsort) sea algo imposible.
+	
 		
 	    \item Algoritmo Quicksort
 
 		
 	\end{enumerate}
 
+\section{Implementación}
+
+\section{Resultados}
+
+    \begin{enumerate}
+        \item Información del Sistema
+        
+        \includegraphics[width=\textwidth]{Captura1}
+        
+    \end{enumerate}
 
 \section{Conclusiones}
 	
