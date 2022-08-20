@@ -146,17 +146,30 @@ La ordenación por selección toma dos arreglos adicionales.
 
 
 		
-		Solución \\
-		.................
+\item \textbf{ALGORITMO HEAP SORT}
+
+        Heapsort. Proviene del inglés y significa ordenamiento por montículos. Es un algoritmo de ordenaciónno recursivo, no estable, con complejidad computacional O (n log n).
 		
-		\item Algoritmo Heapsort
-		
-		Solución \\
-		.................
-\item Algoritmo Heapsort
-		
-		Solución \\
-		.................
+        Este algoritmo consiste en almacenar todos los elementos del vector a ordenar en un montículo (heap), y luego extraer el nodo que queda como nodo raíz del montículo (cima) en sucesivas iteraciones obteniendo el conjunto ordenado. Basa su funcionamiento en una propiedad de los montículos, por la cual, la cima contiene siempre el menor elemento (o el mayor, según se haya definido el montículo) de todos los almacenados en él.
+        
+        Conceptualmente, el ordenamiento por montículos funciona de la siguiente manera:
+        
+        \begin{itemize}
+            \item Construir un Heap sobre el arreglo a ordenar (BUILD HEAP), en orden contrario 
+            al orden de ordenación. Por ejemplo, para ordenar ascendentemente un arreglo se 
+            construye un HEAP sobre él de forma descendiente (el mayor elemento queda en la raíz).
+
+            \item Intercambiar la raíz del Heap, posición 0, con la ultima posición en el Heap.
+
+            \item Disminuir el tamaño del Heap.
+
+            \item Reconstruir el Heap aplicando Heapify en la primera posición.
+
+            \item Repetir los pasos 2, 3 y 4 mientras el tamaño del Heap sea mayor que uno.
+            
+        \end{itemize}
+	
+
 
         \item \textbf{ALGORITMO MERGE SORT}
         
