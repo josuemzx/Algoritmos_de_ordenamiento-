@@ -463,7 +463,12 @@ La ordenación por selección toma dos arreglos adicionales.
 \begin{itemize}
             \item Para Merge Sort se obtiene que el Tiempo de Procesamiento es menor en Goland, incluso menor a C++, esto debido a que los programas en Go aprovechan mas fácil el paralelismo disponible, el tiempo fue mayor con Python. En cuanto a la Desviación Estandar la dispersión es mayor en Python y mucho menor en C++ y Goland.
 \end{itemize}    
-	
+\begin{itemize}
+            \item Cada lenguaje hace optimizaciones diferentes por lo que no tardan lo mismo, es decir cuando codificas en Python o Golang usando sus respectivas librerias realmente aprovechamos las optimizaciones que tienen en sus algoritmos internos para cada funcion, que pueden llamarse de la misma manera pero la implementacion optimiza algo del procesador.
+\end{itemize}
+\begin{itemize}
+            \item C++ es el mas rapido en ejecutar codigo de maquina, pero el algoritmo puede hacer que incluso en el caso de Python o Golan ejecutando mas instrucciones, el total de intrucciones ejecutadas para procesar todo el conjunto de datos sea menor, aparentando ser mas rapido cuando solo es mas eficiente, que es lo que sucedio en Golang nos dio menores tiempos al procesar los ordenamientos. Por tanto no es tan correcto comparar los lenguajes de programacion directamente, cada uno tiene sus optimizaciones segun los paquetes/librerias utilizados en el desarrollo de los algoritmos de ordenamiento.
+\end{itemize}	
 	%\clearpage
 	%\bibliographystyle{apalike}
 	%\bibliographystyle{IEEEtranN}
