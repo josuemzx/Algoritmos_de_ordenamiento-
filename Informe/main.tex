@@ -146,7 +146,8 @@ La ordenación por selección toma dos arreglos adicionales.
 \end{figure}
 
 
-        \item \textbf{Algoritmo Merge Sort}
+
+\item \textbf{Algoritmo Merge Sort}
         
 		 El algoritmo de ordenamiento por mezcla (merge sort) es un algoritmo de ordenamiento externo estable basado en la técnica divide y vencerás.
 		 
@@ -173,7 +174,7 @@ La ordenación por selección toma dos arreglos adicionales.
         \end{enumerate}
     
         
-    \includegraphics[width=\textwidth]{Imagen/merge-sort}
+    \includegraphics[width=0.8\textwidth]{Imagen/merge-sort}
     
     
             Este tipo de ordenamiento es útil cuando se tiene una estructura ordenada y los nuevos datos a añadir se almacenan en una estructura temporal para después agregarlos a la estructura original de manera que vuelva a quedar ordenada.
@@ -245,8 +246,83 @@ La ordenación por selección toma dos arreglos adicionales.
 
    Para medir el tiempo, se da diferentes tamaños de datos que varían de 100,1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 20000, 30000, 40000 y 50000 datos.
 
-   Se desarrollan los diferentes algoritmos en los 03 tipos de lenguajes antes mencionados, los cuales se pueden encontrar en el siguiente repositorio Github \href{https://github.com/josuemzx/Algoritmos_de_ordenamiento-/blob/main/Practica01_QuickSort.ipynb}{Algoritmos QuickSort}, y se obtiene la siguiente tabla con los siguientes gráficos:
+\end{enumerate}
 
+
+\section{Implementación}
+
+  Se desarrollan los diferentes algoritmos en los 03 tipos de lenguajes antes mencionados, los cuales se pueden encontrar en el siguiente repositorio Github \href{https://github.com/josuemzx/Algoritmos_de_ordenamiento-/blob/main/Practica01_QuickSort.ipynb}{Algoritmos QuickSort}, y se obtiene la siguiente tabla con los siguientes gráficos:
+
+
+\section{Resultados}
+
+
+    \begin{enumerate}
+        \item Información del Sistema
+        
+        \includegraphics[width=\textwidth]{Imagen/Captura1}
+	   
+        \item Algoritmo Counting Sort
+        
+        \begin{tabular}{ |p{0.3cm}||p{0.9cm}|p{1.5cm}|p{1.7cm}|p{1.5cm}|p{1.7cm}|p{1.8cm}|p{1.7cm}|  }
+ \hline
+ \multicolumn{8}{|c|}{Tabla comparativa con el promedio de tiempo de procesamiento y desviación estandar} \\
+ \hline
+ N°& Datos &Python Promedio &Python Desviación Estandar &C++ Promedio &C++ Desviación Estandar &GO Promedio &GO Desviación Estandar\\
+ \hline
+0 &100 &0.008069 &0.000143	&0.000292 &0.000066 &0.000109 &0.000020\\
+1 &1000	&0.010068	&0.000754	&0.000274	&0.000003	&0.000103	&0.000018\\
+2	&2000	&0.010750	&0.000729	&0.000284	&0.000002	&0.000111	&0.000022\\
+3	&3000	&0.011239	&0.000335	&0.000302	&0.000003	&0.000099	&0.000017\\
+4	&4000	&0.014080	&0.002667	&0.000314	&0.000002	&0.000103	&0.000022\\
+5	&5000	&0.013084	&0.001839	&0.000330	&0.000010	&0.000119	&0.000039\\
+6	&6000	&0.012468	&0.000601	&0.000346	&0.000014	&0.000101	&0.000019\\
+7	&7000	&0.014128	&0.002605	&0.000356	&0.000006	&0.000108	&0.000023\\
+8	&8000	&0.013761	&0.000387	&0.000365	&0.000004	&0.000114	&0.000020\\
+9	&9000	&0.013874	&0.000234	&0.000383	&0.000012	&0.000112	&0.000020\\
+10	&10000	&0.014682	&0.000361	&0.000394	&0.000007	&0.000112	&0.000022\\
+11	&20000	&0.024680	&0.003192	&0.000543	&0.000041	&0.000123	&0.000045\\
+12	&30000	&0.029446	&0.001843	&0.000660	&0.000032	&0.000118	&0.000030\\
+13	&40000	&0.038761	&0.002477	&0.000796	&0.000040	&0.000102	&0.000019\\
+14	&50000	&0.045249	&0.003135	&0.000930	&0.000045	&0.000121	&0.000045\\
+\hline
+\end{tabular}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{Imagen/CS1.png}
+\label{fig:QuickSort}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{Imagen/CS2.png}
+\label{fig:QuickSort}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{Imagen/CS3.png}
+\label{fig:QuickSort}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{Imagen/CS4.png}
+\label{fig:QuickSort}
+\end{figure}
+
+
+        
+        
+        \item Algoritmo Merge Sort
+        
+        \includegraphics[width=\textwidth]{Imagen/tablaMergeSort.PNG}
+        
+        \item Algoritmo Heap Sort
+        
+        \item Algoritmo Quick Sort
+        
 \begin{tabular}{ |p{0.3cm}||p{0.9cm}|p{1.5cm}|p{1.7cm}|p{1.5cm}|p{1.7cm}|p{1.8cm}|p{1.7cm}|  }
  \hline
  \multicolumn{8}{|c|}{Tabla comparativa con el promedio de tiempo de procesamiento y desviación estandar} \\
@@ -284,32 +360,9 @@ La ordenación por selección toma dos arreglos adicionales.
 \caption{Desviación Estandar QuickSort}
 \label{fig:QuickSort}
 \end{figure}
-
-
-		
-	\end{enumerate}
-\section{Implementación}
-
-https://github.com/josuemzx/Algoritmos_de_ordenamiento-
-
-
-\section{Resultados}
-
-
-    \begin{enumerate}
-        \item Información del Sistema
+  
         
-        \includegraphics[width=\textwidth]{Imagen/Captura1}
-	   
-        \item Algoritmo Counting Sort
         
-        \item Algoritmo Merge Sort
-        
-        \includegraphics[width=\textwidth]{Imagen/tablaMergeSort.PNG}
-        
-        \item Algoritmo Heap Sort
-        
-        \item Algoritmo Quicksort
         
     \end{enumerate}
 
@@ -317,6 +370,9 @@ https://github.com/josuemzx/Algoritmos_de_ordenamiento-
 
 \begin{itemize}
             \item Para el Ordenamiento Rápido (QuickSort), se obtiene que el Tiempo de Procesamiento es menor en el lenguaje Goland, y el costo más alto es el lenguaje C++. Y la Desviación Estandar es similar entre los lenguajes de programación Python y Goland mientras que es mucho más alto en el lenguaje C++, lo que quiere decir que la dispersión de datos es mayor en esta última.
+\end{itemize}
+\begin{itemize}
+            \item Para Counting Sort, se obtiene que el Tiempo de Procesamiento es menor en Goland, el costo más alto en Python y la Desviación Estandar es similar entre los lenguajes de programación C++ y Goland mientras que es mucho más alto en Python, lo que quiere decir que la dispersión de datos es mayor en esta última.
 \end{itemize}
 
     
@@ -328,3 +384,4 @@ https://github.com/josuemzx/Algoritmos_de_ordenamiento-
 		
 	
 \end{document}
+
