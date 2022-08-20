@@ -230,9 +230,9 @@ La ordenación por selección toma dos arreglos adicionales.
         
     Para este tipo de ordenamiento existen tres casos para poder suponer la eficiencia del algoritmo:
      \begin{itemize}
-            \item En el mejor de los casos, el pivote termina en el centro de la lista, diviendo la lista en dos sublistas de igual tamaño. En este caso la complejidad del algoritmo es $\Theta(n.log n)$.
-            \item En el peor de los casos, el pivote termina a un extremo de la lista. En este caso la complejidad del algoritmo es $\Theta (n^2)$.
-            \item En el caso promedio, el orden es $\Theta (n.log n)$.
+            \item En el mejor de los casos, el pivote termina en el centro de la lista, diviendo la lista en dos sublistas de igual tamaño. En este caso la complejidad del algoritmo es O $\ (n.logn)$. (casi lineal).
+            \item En el peor de los casos, el pivote termina a un extremo de la lista. En este caso la complejidad del algoritmo es O $\ (n^2)$. (cuadrática).
+            \item En el caso promedio, el orden es O $\ (n.logn)$. (casi lineal).
     \end{itemize}
 
 \begin{figure}[H]
@@ -251,7 +251,7 @@ La ordenación por selección toma dos arreglos adicionales.
 
 \section{Implementación}
 
-  Se desarrollan los diferentes algoritmos en los 03 tipos de lenguajes antes mencionados, los cuales se pueden encontrar en el siguiente repositorio Github \href{https://github.com/josuemzx/Algoritmos_de_ordenamiento-/blob/main/Practica01_QuickSort.ipynb}{Algoritmos QuickSort}, y se obtiene la siguiente tabla con los siguientes gráficos:
+  Se desarrollan los diferentes algoritmos en los 03 tipos de lenguajes antes mencionados, los cuales se pueden encontrar en el siguiente repositorio Github \href{https://github.com/josuemzx/Algoritmos_de_ordenamiento-/blob/main/QuickSort.ipynb}{Algoritmos QuickSort}, y se obtiene la siguiente tabla con los siguientes gráficos:
 
 
 \section{Resultados}
@@ -454,7 +454,7 @@ La ordenación por selección toma dos arreglos adicionales.
 \section{Conclusiones}
 
 \begin{itemize}
-            \item Para el Ordenamiento Rápido (QuickSort), se obtiene que el Tiempo de Procesamiento es menor en el lenguaje Goland, y el costo más alto es el lenguaje C++. Y la Desviación Estandar es similar entre los lenguajes de programación Python y Goland mientras que es mucho más alto en el lenguaje C++, lo que quiere decir que la dispersión de datos es mayor en esta última.
+            \item Para el Ordenamiento Rápido (QuickSort), se obtiene que el Tiempo de Procesamiento es menor en el lenguaje Goland, y el costo más alto es el lenguaje C++. Y la Desviación Estandar es similar entre los lenguajes de programación Python y Goland mientras que es mucho más alto en el lenguaje C++, lo que quiere decir que la dispersión de datos es mayor en esta última. Y esto puede suceder por tres razones, la primera razón es si se toma el peor caso, en donde el pivote termina al extremo de la lista, por lo tanto el coste computacional sube a O $\ (n^2)$, la segunda razón es la elección del pivote, esto quiere decir que si se toma a cualquier elemento como pivote, dando así una elección a ciegas, donde siempre provoca que el algoritmo tenga un orden de O $\ (n^2)$ y la tercera razón es la técnica de reposicionamiento en donde la idea principal es ubicar los elementos menores y mayores al pivote, sin embargo se puede usar índices para hacer el reposicionamiento de ambas sublistas simultáneamente.
 \end{itemize}
 \begin{itemize}
             \item Para Counting Sort, se obtiene que el Tiempo de Procesamiento es menor en Goland, el costo más alto en Python y la Desviación Estandar es similar entre los lenguajes de programación C++ y Goland mientras que es mucho más alto en Python, lo que quiere decir que la dispersión de datos es mayor en esta última.
